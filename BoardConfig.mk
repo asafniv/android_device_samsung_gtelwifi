@@ -134,7 +134,7 @@ BOARD_HAVE_SAMSUNG_WIFI := true
 EXTENDED_FONT_FOOTPRINT := true
 
 # Use dmalloc() for such low memory devices like us
-MALLOC_IMPL := dlmalloc
+MALLOC_SVELTE := true
 BOARD_USES_LEGACY_MMAP := true
 
 # Enable dex-preoptimization to speed up the first boot sequence
