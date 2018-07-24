@@ -179,15 +179,6 @@ $(call inherit-product-if-exists, frameworks/native/build/tablet-10in-xhdpi-2048
 # HWUI memory config
 $(call inherit-product-if-exists, frameworks/native/build/phone-xhdpi-2048-hwui-memory.mk)
 
-# For userdebug builds
-ADDITIONAL_DEFAULT_PROPERTIES += \
-    ro.secure=0 \
-    ro.adb.secure=0 \
-    ro.debuggable=1 \
-    persist.sys.root_access=1 \
-    persist.service.adb.enable=1 \
-    ro.boot.selinux=permissive
-
 PRODUCT_NAME := full_gtelwifi
 PRODUCT_DEVICE := gtelwifi
 PRODUCT_BRAND := samsung
